@@ -73,7 +73,7 @@
                                         class="gi gi-certificate sidebar-nav-icon"></i>Registrar Reserva</span></a>
                             </li>
                             <li>
-                                <a href="#"><i class="sidebar-nav-mini-hide"></i><i
+                                <a href="reservas_confirmadas.html"><i class="sidebar-nav-mini-hide"></i><i
                                         class="gi gi-notes_2 sidebar-nav-icon"></i><span
                                         class="sidebar-nav-mini-hide">Reservas Activas</span></a>
 
@@ -169,15 +169,15 @@
                                     <div class="block-options pull-right">
                                         <input type="search" class="form-control" placeholder="Search"
                                             aria-controls="ecom-products">
-                                            
+
 
                                     </div>
                                 </div>
                                 <!-- END General Data Title -->
 
                                 <!-- General Data Content -->
-                                <form action="page_ecom_product_edit.html" method="post"
-                                    class="form-horizontal form-bordered" onsubmit="return false;">
+                                <form id="form-validation" action="page_forms_validation.html" method="post"
+                                    class="form-horizontal form-bordered">
                                     <div class="form-group">
                                         <label class="col-md-3 control-label" for="product-id">ID</label>
                                         <div class="col-md-9">
@@ -185,82 +185,111 @@
                                                 value="452">
                                         </div>
                                     </div>
+
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">Nombres</label>
+                                        <label class="col-md-3 control-label" for="nombre_cliente">Nombres</label>
                                         <div class="col-md-9">
-                                            <input type="text" id="nombre_cliente" name="nombre_cliente"
-                                                class="form-control" placeholder="Ingrese el nombre..." required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">Apellidos</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="apellido_cliente" name="apellido_cliente"
-                                                class="form-control" placeholder="Ingrese el apellido..." required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">Correo</label>
-                                        <div class="col-md-9">
-                                            <input type="text" id="correo_cliente" name="correo_cliente"
-                                                class="form-control" placeholder="Ingrese el correo.." required>
+                                            <div class="input-group">
+                                                <input type="text" id="nombre_cliente" name="nombre_cliente"
+                                                    class="form-control" placeholder="Ingrese los nombres">
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">N° Dui</label>
+                                        <label class="col-md-3 control-label" for="apellido_cliente">Apellidos</label>
                                         <div class="col-md-9">
-                                            <input type="number" id="dui" name="dui" class="form-control"
-                                                placeholder="Ingrese el Dui" min="1" pattern="^[0-9]+" required min="0">
+                                            <div class="input-group">
+                                                <input type="text" id="apellido_cliente" name="apellido_cliente"
+                                                    class="form-control" placeholder="Ingrese los apellidos">
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">N° Personas</label>
+                                        <label class="col-md-3 control-label" for="correo_cliente">Correo</label>
                                         <div class="col-md-9">
-                                            <input type="number" id="num_persona" name="num_persona"
-                                                class="form-control" placeholder="1-100" min="1" pattern="^[0-9]+"
-                                                required min="1" max="100">
+                                            <div class="input-group">
+                                                <input type="text" id="correo_cliente" name="correo_cliente"
+                                                    class="form-control" placeholder="test@example.com">
+                                                <span class="input-group-addon"><i class="gi gi-envelope"></i></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">N° Mesa</label>
+                                        <label class="col-md-3 control-label" for="dui_cliente">N° Dui </label>
                                         <div class="col-md-9">
-                                            <input type="number" id="num_mesa" name="num_mesa" class="form-control"
-                                                placeholder="1-50" min="1" pattern="^[0-9]+" required min="1" max="50">
+                                            <div class="input-group">
+                                                <input type="text" id="dui_cliente" name="dui_cliente"
+                                                    class="form-control" placeholder="010214521">
+                                                <span class="input-group-addon"><i class="gi gi-vcard"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="telefono">Telefono </label>
+                                        <div class="col-md-9">
+                                            <div class="input-group">
+                                                <input type="text" id="telefono" name="telefono" class="form-control"
+                                                    placeholder="010214521">
+                                                <span class="input-group-addon"><i class="gi gi-iphone"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="Mesa">N° Mesa </label>
+                                        <div class="col-md-9">
+                                            <div class="input-group">
+                                                <input type="text" id="mesa" name="mesa" class="form-control"
+                                                    placeholder="1-10">
+                                                <span class="input-group-addon"><i
+                                                        class="fa fa-calendar-check-o"></i></span>
+                                            </div>
                                             <!-- BOTON MESAS DISPONIBLES -->
                                             <a href="#" data-toggle="modal" data-target="#exampleModal"
                                                 data-whatever="@mdo"> <button type="button"
-                                                    class="btn btn-sm btn-primary"><i class="fa fa-floppy-o"></i>
-                                                    Mesas disponibles</button>
-
-                                            </a>
+                                                    class="btn btn-sm btn-warning"><i
+                                                        class="fa fa-calendar-check-o"></i>
+                                                    Mesas disponibles</button></a>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">Silla
-                                            adicional</label>
+                                        <label class="col-md-3 control-label" for="sillas">Sillas </label>
                                         <div class="col-md-9">
-                                            <input type="number" id="num_silla" name="num_silla" class="form-control"
-                                                placeholder="1-20" min="1" pattern="^[0-9]+" max="20">
+                                            <div class="input-group">
+                                                <input type="text" id="sillas" name="sillas" class="form-control"
+                                                    placeholder="1-50">
+                                                <span class="input-group-addon"><i class="gi gi-grater"></i> </span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">Fecha</label>
+                                        <label class="col-md-3 control-label" for="fecha">Fecha </label>
                                         <div class="col-md-9">
-                                            <input type="date" id="fecha" name="fecha" class="form-control"
-                                                placeholder="Ingrese el numero de mesa" required>
+                                            <div class="input-group">
+                                                <input type="date" id="fecha" name="fecha" class="form-control"
+                                                    placeholder="1">
+                                                <span class="input-group"></span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label" for="product-name">Hora</label>
+                                        <label class="col-md-3 control-label" for="hora">Hora </label>
                                         <div class="col-md-9">
-                                            <input type="time" id="hora" name="hora" class="form-control"
-                                                placeholder="Ingrese el numero de mesa" required>
+                                            <div class="input-group">
+                                                <input type="time" id="hora" name="hora" class="form-control">
+                                                <span class="input-group"></span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -268,10 +297,8 @@
                                     <div class="form-group form-actions">
                                         <div class="col-md-9 col-md-offset-3">
                                             <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o"></i>
-                                                Agregar</button>
-                                            <button type="reset" class="btn btn-sm btn-warning"><i
-                                                    class="fa fa-repeat"></i>
-                                                Atras</button>
+                                                Guardar y con formar Reserva</button>
+
                                         </div>
                                     </div>
                                 </form>
@@ -308,6 +335,16 @@
 
     <!-- ckeditor.js, load it only in the page you would like to use CKEditor (it's a heavy plugin to include it with the others!) -->
     <script src="js/helpers/ckeditor/ckeditor.js"></script>
+
+    <!-- SCRIPTS DE VALIDACION DE INPUT -->
+    <script src="js/pages/formsValidation.js"></script>
+    <script>
+        $(function () {
+            FormsValidation.init();
+        });
+    </script>
+
+
 </body>
 
 
@@ -327,7 +364,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
+                <input type="search" class="form-control" placeholder="Buscar" aria-controls="ecom-products">
                 <!-- All Products Block -->
                 <div class="block full">
 
@@ -337,7 +374,7 @@
                                 <th class="text-center" style="width: 70px;">ID</th>
                                 <th>Mesas</th>
                                 <th class="text-right hidden-xs">Sillas</th>
-                                <th class="hidden-xs">Horarios</th>
+                                <th class="hidden-xs"> Horarios</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -346,7 +383,7 @@
                                 <td><a href="editar-cliente.html">Mesa N° 1</a></td>
                                 <td class="text-right hidden-xs"><strong>25</strong></td>
                                 <td class="hidden-xs">
-                                    <span class="label label-success">2:00-3:00</span>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Ver Horarios</a>
                                 </td>
                             </tr>
 
@@ -375,6 +412,49 @@
 
 
 <!-- FIN MODAL -->
+
+<!-- segundo modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Horarios</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="search" class="form-control" placeholder="Buscar" aria-controls="ecom-products">
+                <!-- All Products Block -->
+                <h6>
+                    Mesa: <b>1</b>
+                </h6>
+                <h6>Sillas:
+                    <b>10</b>
+                </h6>
+                <div class="block full">
+                    <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width: 50px;">Horarios de Mesa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center"><strong>7:00 PM</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><strong>8:00 PM</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary"  data-dismiss="modal">Aceptar</button>
+
+                </div>
+            </div>
+        </div>
 
 
 

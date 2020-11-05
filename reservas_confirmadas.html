@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>recepcionista</title>
-
+    <title>Reservas Confirmadas</title>
 
     <meta name="description"
         content="ProUI is a Responsive Bootstrap Admin Template created by pixelcave and published on Themeforest.">
@@ -58,15 +57,14 @@
                     <!-- Sidebar Content -->
                     <div class="sidebar-content">
                         <!-- Brand -->
-                        <a href="index.html" class="sidebar-brand">
-                            <i class="gi gi-flash"></i><span
+                        <a href="recepcionista.html" class="sidebar-brand">
+                            <i class="fa fa-cutlery"></i><span
                                 class="sidebar-nav-mini-hide"><strong>Restaurante</strong>CETU</span>
                         </a>
                         <!-- Sidebar Navigation -->
                         <ul class="sidebar-nav">
                             <li>
-                                <a href="recepcionista.html" class="active"><i
-                                        class="gi gi-stopwatch sidebar-nav-icon"></i><span
+                                <a href="recepcionista.html"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span
                                         class="sidebar-nav-mini-hide">Inicio</span></a>
                             </li>
 
@@ -75,7 +73,8 @@
                                         class="gi gi-certificate sidebar-nav-icon"></i>Registrar Reserva</span></a>
                             </li>
                             <li>
-                                <a href="reservas_confirmadas.html"><i class="sidebar-nav-mini-hide"></i><i
+                                <a href="reservas_confirmadas.html" class="active"><i
+                                        class="sidebar-nav-mini-hide"></i><i
                                         class="gi gi-notes_2 sidebar-nav-icon"></i><span
                                         class="sidebar-nav-mini-hide">Reservas Activas</span></a>
 
@@ -97,6 +96,7 @@
 
                     </div>
                     <!-- END Sidebar Content -->
+
                 </div>
                 <!-- END Wrapper for scrolling functionality -->
             </div>
@@ -125,7 +125,7 @@
                         <!-- User Dropdown -->
                         <li class="dropdown">
                             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="img/placeholders/avatars/avatar2.jpg" alt="avatar"> <i
+                                <img src="img/placeholders/avatars/avatarr.png" alt="avatar"> <i
                                     class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
@@ -153,98 +153,55 @@
                 </header>
                 <!-- END Header -->
 
+
                 <!-- Page content -->
                 <div id="page-content">
-                    <!-- Dashboard Header -->
-                    <!-- For an image header add the class 'content-header-media' and an image as in the following example -->
-                    <div class="content-header content-header-media">
+                    <!-- Inbox Header -->
+                    <div class="content-header">
                         <div class="header-section">
-                            <div class="row">
-                                <!-- Main Title (hidden on small devices for the statistics to fit) -->
-                                <div class="col-md-4 col-lg-6 hidden-xs hidden-sm">
-                                    <h1>Bienvenido <strong>Recepcionista</strong><br><small>Feliz dia!</small></h1>
-                                </div>
-
-                                <!-- END Top Stats -->
-                            </div>
+                            <strong>
+                                <h1><i class="gi gi-check"></i>Reservas Confirmadas</small></h1>
+                            </strong>
                         </div>
-                        <!-- For best results use an image with a resolution of 2560x248 pixels (You can also use a blurred image with ratio 10:1 - eg: 1000x100 pixels - it will adjust and look great!) -->
-                        <img src="img/placeholders/headers/dashboard_header.jpg" alt="header image"
-                            class="animation-pulseSlow">
-                    </div>
-                    <!-- END Dashboard Header -->
-
-                    <!-- Mini Top Stats Row -->
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_ready_article.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-autumn animation-fadeIn">
-                                        <i class="fa fa-file-text"></i>
-                                    </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        New <strong>Article</strong><br>
-                                        <small>Mountain Trip</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_comp_charts.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-spring animation-fadeIn">
-                                        <i class="gi gi-usd"></i>
-                                    </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        + <strong>250%</strong><br>
-                                        <small>Sales Today</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_ready_inbox.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-fire animation-fadeIn">
-                                        <i class="gi gi-envelope"></i>
-                                    </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        5 <strong>Messages</strong>
-                                        <small>Support Center</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6 col-lg-3">
-                            <!-- Widget -->
-                            <a href="page_comp_gallery.html" class="widget widget-hover-effect1">
-                                <div class="widget-simple">
-                                    <div class="widget-icon pull-left themed-background-amethyst animation-fadeIn">
-                                        <i class="gi gi-picture"></i>
-                                    </div>
-                                    <h3 class="widget-content text-right animation-pullDown">
-                                        +30 <strong>Photos</strong>
-                                        <small>Gallery</small>
-                                    </h3>
-                                </div>
-                            </a>
-                            <!-- END Widget -->
-                        </div>
-                        <div class="col-sm-6">
-                            <!-- Widget -->
-
-                            <!-- END Widget -->
-                        </div>
-
                     </div>
 
-                    <!-- END Widgets Row -->
+                    <!-- END Quick Stats -->
+
+                    <!-- All Products Block -->
+                    <div class="block full">
+
+                        <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" style="width: 70px;">ID</th>
+                                    <th>Nombre</th>
+                                    <th class="hidden-xs text-center">Telefono</th>
+                                    <th class="hidden-xs text-center">Mesa</th>
+                                    <th class="hidden-xs text-center">Hora</th>
+                                    <th class="text-center">Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center"><a href="#"><strong>5</strong></a></td>
+                                    <td><a href="editar-empleado.html">Kevin Leonel</a></td>
+                                    <td>7777-1234</td>
+                                    <td><strong>Mesa 10</strong></td>
+                                    <td>2:00-3:00</td>
+                                    <td class="text-center">
+                                        <div class="btn-group btn-group-xs">
+                                            <a href="agregar_reserva.html" data-toggle="tooltip" title="Edit"
+                                                class="btn btn-default"><i class="fa fa-pencil"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <!-- END All Products Content -->
+                    </div>
+                    <!-- END All Products Block -->
                 </div>
                 <!-- END Page Content -->
 
@@ -262,24 +219,87 @@
         <!-- END Page Container -->
     </div>
 
+
     <!-- jQuery, Bootstrap.js, jQuery plugins and Custom JS code -->
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
 
-    <!-- Google Maps API Key (you will have to obtain a Google Maps API key to use Google Maps) -->
-    <!-- For more info please have a look at https://developers.google.com/maps/documentation/javascript/get-api-key#key -->
-    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
-    <script src="js/helpers/gmaps.min.js"></script>
-
     <!-- Load and execute javascript code used only in this page -->
-    <script src="js/pages/index.js"></script>
+    <script src="js/pages/ecomProducts.js"></script>
     <script>
         $(function () {
-            Index.init();
+            EcomProducts.init();
         });
     </script>
 </body>
+
+
+<!-- INICIO MODA -->
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Mesas Disponibles</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="search" class="form-control" placeholder="Search" aria-controls="ecom-products">
+                <!-- All Products Block -->
+                <div class="block full">
+
+                    <table id="ecom-products" class="table table-bordered table-striped table-vcenter">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width: 70px;">ID</th>
+                                <th>Mesas</th>
+                                <th class="text-right hidden-xs">Sillas</th>
+                              <a href="horarios.html"> <th class="hidden-xs">Ver Horarios</th></a> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center"><a href="editar-cliente.html"><strong>1</strong></a></td>
+                                <td><a href="editar-cliente.html">Mesa N° 1</a></td>
+                                <td class="text-right hidden-xs"><strong>25</strong></td>
+                                <td class="hidden-xs">
+                                    <a href="">Ver Horarios</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!-- END All Products Content -->
+
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+
+                </div>
+                <!-- END All Products Block -->
+            </div>
+            <!-- END Page Content -->
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus');
+    });
+</script>
+
+
+<!-- FIN MODAL -->
+
+
 
 </html>
