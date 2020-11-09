@@ -85,10 +85,10 @@ var Login = function() {
                     }
                 },
                 messages: {
-                    'login-email': 'Please enter your account\'s email',
+                    'login-email': 'Ingrese su nombre de Usuario',
                     'login-password': {
-                        required: 'Please provide your password',
-                        minlength: 'Your password must be at least 5 characters long'
+                        required: 'Ingrese su Contraseña',
+                        minlength: 'Su contraseña debe contener por lo menos 5 caracteres'
                     }
                 }
             });
@@ -165,26 +165,23 @@ var Login = function() {
                 },
                 messages: {
                     'register-firstname': {
-                        required: 'Please enter your firstname',
-                        minlength: 'Please enter your firstname'
+                        required: 'Debe completar este campo',
+                        minlength: 'Por Favor ingrese su primer nombre'
                     },
                     'register-lastname': {
-                        required: 'Please enter your lastname',
-                        minlength: 'Please enter your lastname'
+                        required: 'Debe completar este campo',
+                        minlength: 'Por Favor ingrese su apellido'
                     },
-                    'register-email': 'Please enter a valid email address',
+                    'register-email': 'Por Favor ingrese un correo valido',
                     'register-password': {
-                        required: 'Please provide a password',
-                        minlength: 'Your password must be at least 5 characters long'
+                        required: 'Debe completar este campo',
+                        minlength: 'Su contraseña debe contener minimo 5 caracteres'
                     },
                     'register-password-verify': {
-                        required: 'Please provide a password',
-                        minlength: 'Your password must be at least 5 characters long',
-                        equalTo: 'Please enter the same password as above'
+                        required: 'Debe completar este campo',
+                        minlength: 'Su contraseña debe contener minimo 5 caracteres',
+                        equalTo: 'Debe ingresar la misma contraseña'
                     },
-                    'register-terms': {
-                        required: 'Please accept the terms!'
-                    }
                 }
             });
         }
